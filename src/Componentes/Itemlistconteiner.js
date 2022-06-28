@@ -12,16 +12,18 @@ const Itemlistconteiner = () => {
                     <section>
                         <img src={Auris} className="img">
                         </img>
-                        <p>Auriculares</p>
                     </section>
                     <section><img src={Mouse} className="img">
                         </img>
-                        <p>Mouse</p>
                     </section>
                     <section><img src={Teclado} className="img_teclado">
                         </img>
-                        <p>Teclado</p>
                     </section>
+                </section>
+                <section className="contenedordescripcion">
+                    <p className="auris">Auriculares</p>
+                    <p className="mouse">Mouse</p>
+                    <p className="teclado">Teclado</p>  
                 </section>
             </>
          

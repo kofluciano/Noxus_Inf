@@ -1,19 +1,28 @@
-import logo from './logo.svg';
+import React from 'react'
 import Header from './Componentes/Header'
 import Navbar from './Componentes/Navbar'
-import Itemlistconteiner from './Componentes/Itemlistconteiner.js'
+import Itemlistconteiner from './Componentes/Itemlistconteiner'
+import { Itemcount } from './Componentes/Itemcount'
 import './App.css';
 
 const App = () => {
+  const numero = 1;
   return (
       <>
       <header>
-          <Header/>
+        <Header/>
+        
       </header>
       <nav>
         <Navbar/>
       </nav>
-      <Itemlistconteiner/>
+      <main>
+        <Itemlistconteiner/>
+        <Itemcount miNumero={numero}/>
+      </main>
+      <footer>
+      
+      </footer>
       
       </>
   );
