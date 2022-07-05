@@ -1,17 +1,22 @@
 import { Alert } from '@mui/material';
-import React,{ useState } from 'react'
+import React,{useState, useEffect } from 'react'
 
 export const Itemcount = ({ miNumero }) =>{
+
+    const[numero,setnumero] = useState(0);
+
     
     const[Contadora, setContadora] = useState(0);
+    
     const[Contadorm, setContadorm] = useState(0);
+    
     const[Contadort, setContadort] = useState(0);
     
     const stocka = 5
     
-    const stockm = 8
+    const stockm = 3
     
-    const stockt = 0
+    const stockt = 10
 
 
 // Auris
@@ -23,14 +28,16 @@ export const Itemcount = ({ miNumero }) =>{
         setContadora(Contadora +1);
     }
 }
-    const Quitara = () => {
+    
+const Quitara = () => {
             if (Contadora<=0) {
                 alert("No se pueden elegir valores menores a 0");
             } else {
                 setContadora(Contadora -1);
             }      
 }
-        const adda = () => {
+        
+const adda = () => {
             if (Contadora<=0) {
                 alert("No hay productos disponibles para agregar");
             } else {
@@ -40,9 +47,10 @@ export const Itemcount = ({ miNumero }) =>{
 }
 
 // Mouse
-    const Agregarm = () => {
+    
+const Agregarm = () => {
         if (stockm <= Contadorm ) {
-        alert("No hay mas stock");
+            alert("No hay mas stock");
         } else {
         setContadorm(Contadorm +1);
     }
@@ -58,30 +66,33 @@ export const Itemcount = ({ miNumero }) =>{
         if (Contadorm<=0) {
             alert("No hay productos disponibles para agregar");
         } else {
-            alert("Se agregaron "+Contadorm+" unidades de auriculares al carrito");
+            alert("Se agregaron "+Contadorm+" unidades de mouse al carrito");
         }
         
 }
 //Teclado
-    const Agregart = () => {
+    
+const Agregart = () => {
         if (stockt <= Contadort ) {
         alert("No hay mas stock");
         } else {
-        setContadorm(Contadort +1);
+        setContadort(Contadort +1);
 }
 }
-    const Quitart = () => {
+    
+const Quitart = () => {
         if (Contadort<=0) {
             alert("No se pueden elegir valores menores a 0");
         } else {
             setContadorm(Contadort -1);
         } 
 }
-    const addt = () => {
+    
+const addt = () => {
         if (Contadort<=0) {
             alert("No hay productos disponibles para agregar");
         } else {
-            alert("Se agregaron "+Contadort+" unidades de auriculares al carrito");
+            alert("Se agregaron "+Contadort+" unidades de teclados al carrito");
         }
         
 }
