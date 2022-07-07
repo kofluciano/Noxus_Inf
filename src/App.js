@@ -2,7 +2,7 @@ import React from 'react'
 import Header from './Componentes/Header'
 import Navbar from './Componentes/Navbar'
 import Itemlistconteiner from './Componentes/Itemlistconteiner'
-import { Itemcount } from './Componentes/Itemcount'
+import ItemDetailContainer from './Componentes/ItemDetailConteiner'
 import './App.css';
 
 const App = () => {
@@ -17,8 +17,8 @@ const App = () => {
         <Navbar/>
       </nav>
       <main>
-        <Itemlistconteiner/>
-        <Itemcount miNumero={numero}/>
+        <Itemlistconteiner />
+        <ItemDetailContainer/>
       </main>
       <footer>
       

@@ -127,15 +127,16 @@ h1{
   padding: 10px;
   display: flex;
   justify-content: space-between;
-  background-image: url("assets/noxusfondo.jpg");
 }
 .img{
-  display: flex;
   border: black 3px solid;
   width: 500px;
   height: 500px;
   margin: 10px;
   border-radius: 100%;
+  margin-left: 90px;
+  background-color: white;
+  
 
 }
 .img_teclado{
@@ -194,11 +195,13 @@ h1{
   padding: 10px;
   display: flex;
   align-items: center;
-  align-content: center;
+  align-content: center; 
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 30px;
   justify-content: space-between;
-  
+  background-color: gray;
+  border: 1px solid black;
+  border-radius: 25px;
 }
 .itemcount{
   color:white;
@@ -240,13 +243,13 @@ button{
 }
 li{color: white;
   display: flex;
-  font-size:  50px;
+  font-size:  30px;
   border-radius: 25px;
   background-color: black;
-  padding: 0px;
-  border: #800 solid 3px;
-  width: 360px;
-margin-left: 50px;
-margin-right: 50px;
-padding: 10px;}
+  border: #800 solid 1px;
+  /* width: 250px; */
+  /* margin-left: 50px;
+  margin-right: 50px; */
+  padding: 10px;
+margin: auto;}
 

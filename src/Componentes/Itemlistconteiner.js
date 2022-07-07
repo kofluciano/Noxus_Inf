@@ -1,6 +1,6 @@
 import React from "react"
 import Itemlist from "./Itemlist"
-// import React from 'react'
+import Itemcount from "./Itemcount"
 
 
 function Itemlistconteiner() {
@@ -10,6 +10,7 @@ function Itemlistconteiner() {
                 <h2>DESTACADOS</h2>
             </div>
             <Itemlist/>
+            <Itemcount/>
         </>
 
     )
