@@ -3,7 +3,7 @@ import ItemDetail from './ItemDetail'
 const ItemDetailContainer = () =>{
     return(
         <>
-        <h2>Mira los detalles de los Producto:</h2>
+        <li>Mira los detalles de los Productos:</li>
         <ItemDetail />
         </>
 
